@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(45deg, #7f0d1e, #6a0dad);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.chat-box {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.message {
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 20px;
+  max-width: 70%;
+  word-wrap: break-word;
+  color: white;
+}
+
+.user {
+  background-color: #333;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.ai {
+  background-color: royalblue;
+  align-self: flex-start;
+}
+
+.input-area {
+  display: flex;
+}
+
+input {
+  flex-grow: 1;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+}
+
+#calendar-container {
+  width: 90%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#calendar {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.export-button-container {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.export-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.export-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.export-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
